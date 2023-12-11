@@ -3,20 +3,20 @@ const { default: mongoose } = require("mongoose");
 
 const subSectionSchema = new mongoose.Schema({
 
-    title : {
-        type : String,
-        trim : true
+    title: {
+        type: String,
+        trim: true
     },
-    timeDuration : {
-        type :String
+    timeDuration: {
+        type: String
     },
-    description : {
-        type : String
+    description: {
+        type: String
     },
-    videoUrl : {
-        type : String 
+    videoUrl: {
+        type: String
     }
-    
+
 })
 
 module.exports = mongoose.model("SubSection", subSectionSchema)
