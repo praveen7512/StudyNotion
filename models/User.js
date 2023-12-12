@@ -47,5 +47,3 @@ const userSchhema = new mongoose.Schema({
 
 module.exports = mongoose.model("User", userSchhema);
 
-
-//write a javascript code for
