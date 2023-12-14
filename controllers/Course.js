@@ -22,10 +22,9 @@ exports.createCourse = async (req, res) => {
                 sucess: false,
                 message: "all fieds are required"
             })
-        }
 
-        
 
+        }        
         const userId = req.user._id;
         const instructorDetails = await User.findById(userId);
         console.log("instructorDetails", instructorDetails);
