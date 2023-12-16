@@ -94,7 +94,7 @@ exports.getAllUserDetails = async (req, res) =>{
         const {id} = req.user.id;
 
         if(!id){
-            return res.status(400).json({
+            return res.status(400).json({ 
                 success : false,
                 message : "Users Details Does not exits"
             })
@@ -115,3 +115,7 @@ exports.getAllUserDetails = async (req, res) =>{
         })
     }
 }
+
+
+
+
